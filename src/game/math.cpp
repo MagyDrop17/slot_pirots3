@@ -75,3 +75,4 @@ void calibrate_to_target(Paytable& pt, double target_rtp) {
     const double r2 = simulate_rtp(N, bet, sc);
     if (std::abs(r2 - target_rtp) < std::abs(r1 - target_rtp)) pt = sc;
 }
+
